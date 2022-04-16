@@ -13,8 +13,3 @@ body {
 :root {
   --primary-color: #f7783e;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

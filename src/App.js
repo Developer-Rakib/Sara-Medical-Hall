@@ -6,6 +6,9 @@ import { Route, Routes } from 'react-router-dom'
 import NotFound from './pages/SharedPage/NotFound/NotFound';
 import Footer from './pages/SharedPage/Footer/Footer';
 import Home from './pages/Home/Home/Home';
+import Blog from './pages/Blog/Blog';
+import About from './pages/About/About';
+import Login from './pages/Login/Login';
 
 export const DisplyNameContext = createContext("")
 
@@ -21,6 +24,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home></Home>}></Route>
           <Route path='/home' element={<Home></Home>}></Route>
+          <Route path='/blog' element={<Blog></Blog>}></Route>
+          <Route path='/about' element={<About></About>}></Route>
+          <Route path='/login' element={<Login></Login>}></Route>
           <Route path='*' element={<NotFound></NotFound>}></Route>
         </Routes>
 

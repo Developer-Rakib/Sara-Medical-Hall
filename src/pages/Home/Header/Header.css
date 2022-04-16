@@ -1,0 +1,75 @@
+.header-container {
+    position: relative;
+}
+
+.nav {
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.nav a {
+    transition: .2s;
+    display: inline-block;
+    margin: 0 10px;
+    margin-top: 10px;
+}
+
+.navLink {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    border-bottom: 2px solid lightgray;
+    letter-spacing: 1px;
+    font-size: 19px;
+    padding: 0 10px;
+}
+
+.activeColor {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 19px;
+    padding: 0 20px;
+}
+
+.user {
+    position: absolute;
+    top: 19px;
+    right: 31px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user p {
+    font-size: 11px;
+    margin: 0 7px 0px 3px;
+    color: #787878;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+}
+
+.user button {
+    margin: 0 !important;
+    font-size: 11px;
+    padding: 3px 9px;
+    background-color: #00b3ff;
+    color: white;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.user img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+@media (max-width: 640px) {
+
+
+    .nav a {
+        width: 50%;
+        margin: 4px auto;
+    }
+}

@@ -1,11 +1,14 @@
 .header-container {
-    position: relative;
-}
-
-.nav {
     font-family: 'Bebas Neue', cursive;
-
+    position: absolute;
+    width: 100%;
 }
+
+.logo h2 {
+    color: #3e4a59;
+}
+
+
 
 .nav a {
     transition: .2s;

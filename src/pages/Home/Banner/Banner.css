@@ -1,0 +1,43 @@
+.banner-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../../img/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-container h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #3e4a59;
+}
+
+.banner-container h5 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    letter-spacing: 7px;
+    padding-left: 10px;
+}
+
+.banner-container p {
+    color: #3e4a59;
+    max-width: 50%;
+    padding: 10px 5px;
+    font-size: 17px;
+}
+
+.banner-container button {
+    background: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    padding: 9px 19px;
+    border-radius: 4px 4px 4px 24px;
+    font-weight: 500;
+    transition: .2s;
+    width: 135px;
+}
+
+.banner-container button:hover {
+    background: #ab532a;
+    border-radius: 4px 4px 4px 4px;
+}

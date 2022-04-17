@@ -13,6 +13,7 @@ const Services = () => {
                 <div className='services-info'>
                     <h5 className="text-xl sm:text-2xl mt-4">Relationship Issues</h5>
                     <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    <span className='price'>$100</span>
                     <button className='flex'><FiShoppingCart className='mr-2'></FiShoppingCart> APPOINMENT</button>
                 </div>
             </div>
@@ -21,6 +22,7 @@ const Services = () => {
                 <div className='services-info'>
                     <h5 className="text-xl sm:text-2xl mt-4">Anxiety Issues</h5>
                     <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    <span className='price'>$150</span>
                     <button className='flex'><FiShoppingCart className='mr-2'></FiShoppingCart> APPOINMENT</button>
                 </div>
             </div>
@@ -29,6 +31,7 @@ const Services = () => {
                 <div className='services-info'>
                     <h5 className="text-xl sm:text-2xl mt-4">Psychologist Issues</h5>
                     <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    <span className='price'>$250</span>
                     <button className='flex'><FiShoppingCart className='mr-2'></FiShoppingCart> APPOINMENT</button>
                 </div>
             </div>

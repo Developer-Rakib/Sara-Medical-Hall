@@ -50,12 +50,12 @@ const SocialLogin = () => {
     return (
         <div>
             <div className='flex justify-center items-center py-2'>
-                <div className='w-32 bg-gray-400' style={{ height: '2px' }}></div>
+                <div className='w-24 sm:w-32 bg-gray-400' style={{ height: '2px' }}></div>
                 <p className='px-2'>or</p>
-                <div className='w-32 bg-gray-400' style={{ height: '2px' }}></div>
+                <div className='w-24 sm:w-32 bg-gray-400' style={{ height: '2px' }}></div>
             </div>
             <div className='flex justify-center'>
-                <button onClick={handleGoogleSignin} className='flex items-center'> <span className="mx-1">Login with</span> <FcGoogle></FcGoogle></button>
+                <button onClick={handleGoogleSignin} className='flex items-center text-sm sm:text-lg'> <span className="mx-1">Login with</span> <FcGoogle></FcGoogle></button>
             </div>
 
         </div>

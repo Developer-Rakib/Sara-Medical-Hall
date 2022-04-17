@@ -114,7 +114,7 @@ const SignUp = () => {
     }
     return (
         <div className='SignIn-container'>
-            <div className="SignIn pt-8 pb-8">
+            <div className="SignIn py-5 sm:py-8">
                 <div className="box">
                     <div className="form">
                         <h1>Sign Up Form</h1>

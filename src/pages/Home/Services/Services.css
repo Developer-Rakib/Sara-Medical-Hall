@@ -33,7 +33,7 @@
 }
 
 .services-info p {
-    margin: 10px 0px 20px 0;
+    margin: 10px 0px 0px 0;
 }
 
 .services-info button {
@@ -64,6 +64,20 @@
     color: white;
 }
 
+.price {
+    margin: 5px 0;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(105, 104, 104);
+    /* color: rgb(251, 126, 16); */
+}
+
+.active .price {
+    color: white;
+    /* color: rgb(251, 126, 16); */
+}
+
 @media (max-width: 600px) {
     .services-container {
         width: 80%;
@@ -78,9 +92,10 @@
     }
 
     .services-info p {
-        margin: 7px 0px 15px 0;
+        margin: 7px 0px 0 0;
         font-size: 14px;
     }
+
 
     .services-info button {
         padding: 7px 15px;

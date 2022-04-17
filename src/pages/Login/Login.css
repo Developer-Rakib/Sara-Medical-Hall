@@ -3,7 +3,6 @@ img {
 }
 
 .SignIn-container {
-    height: 97vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +91,7 @@ img {
     color: white;
 }
 
+.form p {}
 
 .form p a,
 .forgot {
@@ -112,3 +112,48 @@ img {
 }
 
 .direct-login {}
+
+@media (max-width:600px) {
+    .SignIn-container {}
+
+    .SignIn {
+        width: 80%;
+        min-height: 400px;
+    }
+
+    .input-container {
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+    }
+
+    .form {
+        padding: 0 24px;
+    }
+
+    .form h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.5px;
+        margin-bottom: 28px;
+    }
+
+    .form h1::after {
+        bottom: -10px;
+        height: 4px;
+        width: 90px;
+    }
+
+    .form p {
+        font-size: 14px;
+    }
+
+    .form form input {
+        width: 95%;
+        padding: 4px 17px;
+    }
+
+    .form p a,
+    .forgot {
+        font-size: 14px;
+    }
+
+}

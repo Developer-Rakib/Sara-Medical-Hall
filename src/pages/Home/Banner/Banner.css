@@ -31,7 +31,7 @@
     color: white;
     font-size: 16px;
     padding: 9px 19px;
-    border-radius: 4px 4px 4px 24px;
+    border-radius: 4px 4px 4px 20px;
     font-weight: 500;
     transition: .2s;
     width: 135px;
@@ -40,4 +40,30 @@
 .banner-container button:hover {
     background: #ab532a;
     border-radius: 4px 4px 4px 4px;
+}
+
+@media (max-width: 600px) {
+    .banner-container p {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 10px 5px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .banner-container h5 {
+        font-size: 13px;
+    }
+
+    .banner-container button {
+        font-size: 14px;
+        padding: 8px 11px;
+        border-radius: 5px;
+        width: 126px;
+        margin: 0 auto;
+    }
+
+    .logo h2 {
+        margin-top: 20px;
+    }
 }

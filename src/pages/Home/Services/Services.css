@@ -63,3 +63,27 @@
     background-color: var(--primary-color);
     color: white;
 }
+
+@media (max-width: 600px) {
+    .services-container {
+        width: 80%;
+    }
+
+    .services-item {
+        margin: 10px 0;
+    }
+
+    .services-item img {
+        width: 55px;
+    }
+
+    .services-info p {
+        margin: 7px 0px 15px 0;
+        font-size: 14px;
+    }
+
+    .services-info button {
+        padding: 7px 15px;
+        font-size: 12px;
+    }
+}

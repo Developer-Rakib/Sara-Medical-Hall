@@ -11,7 +11,7 @@ const Services = () => {
             <div className='services-item'>
                 <img src={relationship} alt="" />
                 <div className='services-info'>
-                    <h5 className="text-2xl mt-4">Relationship Issues</h5>
+                    <h5 className="text-xl sm:text-2xl mt-4">Relationship Issues</h5>
                     <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
                     <button className='flex'><FiShoppingCart className='mr-2'></FiShoppingCart> APPOINMENT</button>
                 </div>
@@ -19,7 +19,7 @@ const Services = () => {
             <div className='services-item active'>
                 <img src={anixiaty} alt="" />
                 <div className='services-info'>
-                    <h5 className="text-2xl mt-4">Anxiety Issues</h5>
+                    <h5 className="text-xl sm:text-2xl mt-4">Anxiety Issues</h5>
                     <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
                     <button className='flex'><FiShoppingCart className='mr-2'></FiShoppingCart> APPOINMENT</button>
                 </div>
@@ -27,7 +27,7 @@ const Services = () => {
             <div className='services-item'>
                 <img src={Psychologist} alt="" />
                 <div className='services-info'>
-                    <h5 className="text-2xl mt-4">Psychologist Issues</h5>
+                    <h5 className="text-xl sm:text-2xl mt-4">Psychologist Issues</h5>
                     <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
                     <button className='flex'><FiShoppingCart className='mr-2'></FiShoppingCart> APPOINMENT</button>
                 </div>

@@ -4,7 +4,8 @@ import openNav from '../../../img/openNav.png'
 import closeNav from '../../../img/close.png'
 import { useContext, useState } from 'react';
 import auth from '../../../firebase.init.js';
-// import { auth } from '../../../firebase.init';
+import { GoThreeBars } from 'react-icons/go';
+import { GrClose } from 'react-icons/gr';
 import { signOut } from 'firebase/auth';
 import toast from 'react-hot-toast';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -41,7 +42,7 @@ const Header = () => {
                 <h2 className="text-2xl sm:text-4xl sm:mt-3">Psychology specialist</h2>
             </div>
             <nav className=''>
-                <img onClick={navBtnHndle} className='sm:hidden absolute right-8 top-5' width={25} src={toggle ? closeNav : openNav} alt="" />
+                <span onClick={navBtnHndle} className='sm:hidden absolute right-8 top-5'>{toggle ? <GrClose></GrClose> : <GoThreeBars></GoThreeBars>}</span>
                 <ul className={`flex flex-col sm:flex-row absolute left-0 justify-center sm:relative sm:opacity-100 sm:top-0 bg-white sm:bg-inherit w-full py-2 duration-500 ease-out ${toggle ? "top-12 opacity-100" : "top-[-250px] opacity-0"}`}>
                     <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/home"}>HOME</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/blog"}>BLOGS</NavLink>

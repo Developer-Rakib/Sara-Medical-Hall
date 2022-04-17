@@ -6,6 +6,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 // import { auth } from '../../firebase.init';
 import Loading from '../SharedPage/Loading/Loading';
+import SocialLogin from '../SharedPage/SocialLogin/SocialLogin';
 import './Login.css';
 
 const Login = () => {
@@ -57,7 +58,7 @@ const Login = () => {
 
 
     const handleForgetPass = () => {
-        console.log(email.value);
+        // console.log(email.value);
         sendPasswordResetEmail(auth, email.value)
             .then(() => {
                 toast.success('Mail Sent!', { id: "signup" })
@@ -102,6 +103,7 @@ const Login = () => {
                         <p>Forgot Password? <button className='forgot' onClick={handleForgetPass}>Click Here</button></p>
                         <p>Dont have an account ? <Link to={"/signUp"}>Sign Up</Link></p>
                     </div>
+                    <SocialLogin></SocialLogin>
 
                 </div>
             </div>

@@ -6,6 +6,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import Loading from '../SharedPage/Loading/Loading';
 import auth from '../../firebase.init';
 import { DisplyNameContext } from '../../App';
+import SocialLogin from '../SharedPage/SocialLogin/SocialLogin';
 
 const SignUp = () => {
     const [name, setName] = useState({ value: "", error: "" });
@@ -142,6 +143,7 @@ const SignUp = () => {
                             <p>You already have an account ? <Link to={"/login"}>Login</Link></p>
                         </form>
                     </div>
+                    <SocialLogin></SocialLogin>
 
                 </div>
             </div>

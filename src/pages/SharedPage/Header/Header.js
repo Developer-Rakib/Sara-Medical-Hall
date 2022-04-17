@@ -24,19 +24,19 @@ const Header = () => {
     const navBtnHndle = () => {
         setToggle(!toggle)
     }
-    // const handleLogout = () => {
-    //     signOut(auth).then(() => {
-    //         toast.success('Logged Out!', { id: "logOut" })
-    //         navigat("/login")
+    const handleLogout = () => {
+        signOut(auth).then(() => {
+            toast.success('Logged Out!', { id: "logOut" })
+            navigat("/login")
 
-    //     }).catch((error) => {
-    //         console.log(error.message);
-    //     });
+        }).catch((error) => {
+            console.log(error.message);
+        });
 
-    // };
+    };
 
     return (
-        <div className='header-container sticky sm:pt-3 sm:pb-4  nav flex px-5 sm:px-20 justify-between items-center'>
+        <div className='header-container sticky sm:pt-3 sm:pb-4  nav flex px-5 sm:pr-20 sm:pl-20 justify-between items-center'>
             <div className="logo">
                 <h2 className="text-2xl sm:text-4xl sm:mt-3">Psychology specialist</h2>
             </div>
@@ -46,21 +46,24 @@ const Header = () => {
                     <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/home"}>HOME</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/blog"}>BLOGS</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/about"}>ABOUT</NavLink>
-                    <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/login"}>Login</NavLink>
+                    {user ?
+                        <div className="user flex items-center">
+                            <img src={user.photoURL ? user.photoURL : "https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png"} alt="" />
+                            <p>{user?.displayName}</p>
+                            <button onClick={handleLogout}>LogOut</button>
+                        </div>
+                        :
+                        <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/login"}>Login</NavLink>}
                 </ul>
                 {
                     // user &&
 
-                    // <div className="user flex items-center">
-                    //     <img src={user.photoURL ? user.photoURL : "https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png"} alt="" />
-                    //     <p>{user?.displayName}</p>
-                    //     <button onClick={handleLogout}>LogOut</button>
-                    // </div>
+
 
                 }
             </nav>
         </div >
     );
-}
+};
 
 export default Header;

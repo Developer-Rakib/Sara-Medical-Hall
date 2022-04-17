@@ -3,7 +3,7 @@ img {
 }
 
 .SignIn-container {
-    height: 90vh;
+    height: 97vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@ img {
 
 .SignIn {
     width: 400px;
-    min-height: 400px;
+    min-height: 450px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     display: flex;
@@ -42,7 +42,7 @@ img {
     bottom: -10px;
     height: 5px;
     width: 80px;
-    background-color: blue;
+    background-color: var(--primary-color);
     border-radius: 8px;
 }
 
@@ -88,21 +88,21 @@ img {
 }
 
 .form form input[type="submit"]:hover {
-    background-color: blue;
+    background-color: var(--primary-color);
     color: white;
 }
 
 
 .form p a,
 .forgot {
-    color: blue;
+    color: var(--primary-color);
     font-weight: 600;
     font-size: 15px;
 }
 
 .form p a:hover,
 .forgot:hover {
-    color: rgb(10, 10, 139);
+    color: rgb(216, 69, 15);
 }
 
 .error {

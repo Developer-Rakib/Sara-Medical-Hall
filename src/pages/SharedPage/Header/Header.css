@@ -38,9 +38,9 @@
 }
 
 .user {
-    position: absolute;
-    top: 19px;
-    right: 31px;
+    /* position: absolute;
+	top: 0px;
+	right: 6px; */
     font-family: 'Poppins', sans-serif;
 }
 

@@ -9,6 +9,7 @@ import Home from './pages/Home/Home/Home';
 import Blog from './pages/Blog/Blog';
 import About from './pages/About/About';
 import Login from './pages/Login/Login';
+import SignUp from './pages/SignUp/SignUp';
 
 export const DisplyNameContext = createContext("")
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/home' element={<Home></Home>}></Route>
           <Route path='/blog' element={<Blog></Blog>}></Route>
           <Route path='/about' element={<About></About>}></Route>
+          <Route path='/signUp' element={<SignUp></SignUp>}></Route>
           <Route path='/login' element={<Login></Login>}></Route>
           <Route path='*' element={<NotFound></NotFound>}></Route>
         </Routes>

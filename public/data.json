@@ -1,0 +1,23 @@
+[
+    {
+        "img": "https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/d7da67324cec5ce5a2e9123a/1491171.png",
+        "name": "Relationship Issues",
+        "price": "125",
+        "desciption": "The transcendence of psychological factors of the doctor-patient relationship is given by the fact of its influence on results and quality of medical care, improvement in compliance, satisfaction and recall of physician information.",
+        "active": false
+    },
+    {
+        "img": "https://i.ibb.co/F5dKHQY/anixiaty.png",
+        "name": "Anxiety Issues",
+        "price": "150",
+        "desciption": "Psychotherapy. Also known as talk therapy or psychological counseling, psychotherapy involves working with a therapist to reduce your anxiety symptoms. It can be an effective treatment for anxiety.",
+        "active": true
+    },
+    {
+        "img": "https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/7df87cc8fc465254aa83827a/1491214.png",
+        "name": "Psychologist Issues",
+        "price": "250",
+        "desciption": "Psychologists, who study how people work on their problems, break down problem solving into a series of stages or mental processes. While there are many types of mental distress and their gravity also differs, it is considered that people more or less follow a similar pattern in solving problems.",
+        "active": false
+    }
+]

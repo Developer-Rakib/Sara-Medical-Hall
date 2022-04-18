@@ -1,7 +1,5 @@
 import { Link as button, NavLink, useNavigate } from 'react-router-dom';
 import "./Header.css"
-import openNav from '../../../img/openNav.png'
-import closeNav from '../../../img/close.png'
 import { useContext, useState } from 'react';
 import auth from '../../../firebase.init.js';
 import { GoThreeBars } from 'react-icons/go';
@@ -22,6 +20,8 @@ const Header = () => {
     // console.log(user);
     // console.log(user?.displayName);
 
+
+
     const navBtnHndle = () => {
         setToggle(!toggle)
     }
@@ -37,11 +37,11 @@ const Header = () => {
     };
 
     return (
-        <div className='header-container sticky sm:pt-3 sm:pb-4  nav flex px-5 sm:pr-20 sm:pl-20 justify-between items-center'>
+        <div className='header-container z-10 sticky sm:pt-3 sm:pb-4  nav flex px-5 sm:pr-20 sm:pl-20 justify-between items-center'>
             <div className="logo">
                 <h2 className="text-2xl sm:text-4xl sm:mt-3">Psychology specialist</h2>
             </div>
-            <nav className=''>
+            <nav onClick={() => setToggle(!toggle)}>
                 <span onClick={navBtnHndle} className='sm:hidden absolute right-8 top-5'>{toggle ? <GrClose></GrClose> : <GoThreeBars></GoThreeBars>}</span>
                 <ul className={`flex flex-col sm:flex-row absolute left-0 justify-center sm:relative sm:opacity-100 sm:top-0 bg-white sm:bg-inherit w-full py-2 duration-500 ease-out ${toggle ? "top-12 opacity-100" : "top-[-250px] opacity-0"}`}>
                     <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/home"}>HOME</NavLink>
@@ -56,12 +56,7 @@ const Header = () => {
                         :
                         <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/login"}>Login</NavLink>}
                 </ul>
-                {
-                    // user &&
 
-
-
-                }
             </nav>
         </div >
     );

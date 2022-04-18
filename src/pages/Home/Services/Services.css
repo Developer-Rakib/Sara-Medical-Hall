@@ -78,14 +78,18 @@
     /* color: rgb(251, 126, 16); */
 }
 
+@media (max-width: 900px) {
+    .services-item {
+        margin: 10px 0;
+    }
+}
+
 @media (max-width: 600px) {
     .services-container {
         width: 80%;
     }
 
-    .services-item {
-        margin: 10px 0;
-    }
+
 
     .services-item img {
         width: 55px;

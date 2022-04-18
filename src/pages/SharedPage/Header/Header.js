@@ -37,9 +37,9 @@ const Header = () => {
     };
 
     return (
-        <div className='header-container z-10 sticky sm:pt-3 sm:pb-4  nav flex px-5 sm:pr-20 sm:pl-20 justify-between items-center'>
+        <div className='header-container z-10 sticky sm:pt-3 sm:pb-4  nav flex px-5 md:px-10 lg:px-20 justify-between items-center'>
             <div className="logo">
-                <h2 className="text-2xl sm:text-4xl sm:mt-3">Sara Medical Hall</h2>
+                <h2 className="text-2xl lg:text-4xl sm:mt-3">Sara Medical Hall</h2>
             </div>
             <nav onClick={() => setToggle(!toggle)}>
                 <span onClick={navBtnHndle} className='sm:hidden absolute right-8 top-5'>{toggle ? <GrClose></GrClose> : <GoThreeBars></GoThreeBars>}</span>

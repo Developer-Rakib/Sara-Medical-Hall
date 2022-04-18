@@ -16,7 +16,7 @@ const SignUp = () => {
     const [conPass, setConPass] = useState({ value: "", error: "" });
     const [displyName, setDisplyName] = useContext(DisplyNameContext)
 
-    const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const [updateProfile, updating, UpError] = useUpdateProfile(auth);
     const navigat = useNavigate();
 

@@ -39,9 +39,6 @@
 }
 
 .user {
-    /* position: absolute;
-	top: 0px;
-	right: 6px; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -69,11 +66,17 @@
     border-radius: 50%;
 }
 
+@media (max-width: 900px) {}
+
 @media (max-width: 640px) {
 
 
     .nav a {
         width: 50%;
         margin: 4px auto;
+    }
+
+    .user {
+        margin: 0 auto;
     }
 }

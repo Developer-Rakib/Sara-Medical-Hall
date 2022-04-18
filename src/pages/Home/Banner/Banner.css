@@ -42,6 +42,14 @@
     border-radius: 4px 4px 4px 4px;
 }
 
+@media (max-width: 900px) {
+    .banner-container h5 {
+        font-size: 18px;
+        letter-spacing: 6px;
+        padding-left: 5px;
+    }
+}
+
 @media (max-width: 600px) {
     .banner-container p {
         max-width: 90%;

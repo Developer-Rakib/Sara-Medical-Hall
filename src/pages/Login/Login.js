@@ -2,6 +2,7 @@ import { sendPasswordResetEmail } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import toast from 'react-hot-toast';
+import { Bounce } from 'react-reveal';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 // import { auth } from '../../firebase.init';
@@ -82,32 +83,34 @@ const Login = () => {
         return <Loading></Loading>
     }
     return (
-        <div className='SignIn-container'>
-            <div className="SignIn">
-                <div className="box">
-                    <div className="form">
-                        <h1>Login Form</h1>
+        <Bounce top>
+            <div className='SignIn-container'>
+                <div className="SignIn">
+                    <div className="box">
+                        <div className="form">
+                            <h1>Login Form</h1>
 
-                        <form onSubmit={hadnleLogIn}>
-                            <div className='input-container'>
-                                <input onBlur={hndleEmail} type="email" name="email" placeholder="Enter Your Email" id="" required />
+                            <form onSubmit={hadnleLogIn}>
+                                <div className='input-container'>
+                                    <input onBlur={hndleEmail} type="email" name="email" placeholder="Enter Your Email" id="" required />
 
-                            </div>
-                            <div className='input-container'>
-                                <input onBlur={hndlePass} type="password" name="password" placeholder="Enter Your Password" id="" required />
-                            </div>
-                            <div className='input-container'>
-                                <input type="submit" value="Login" />
-                            </div>
-                        </form>
-                        <p>Forgot Password? <button className='forgot' onClick={handleForgetPass}>Click Here</button></p>
-                        <p>Dont have an account ? <Link to={"/signUp"}>Sign Up</Link></p>
+                                </div>
+                                <div className='input-container'>
+                                    <input onBlur={hndlePass} type="password" name="password" placeholder="Enter Your Password" id="" required />
+                                </div>
+                                <div className='input-container'>
+                                    <input type="submit" value="Login" />
+                                </div>
+                            </form>
+                            <p>Forgot Password? <button className='forgot' onClick={handleForgetPass}>Click Here</button></p>
+                            <p>Dont have an account ? <Link to={"/signUp"}>Sign Up</Link></p>
+                        </div>
+                        <SocialLogin></SocialLogin>
+
                     </div>
-                    <SocialLogin></SocialLogin>
-
                 </div>
             </div>
-        </div>
+        </Bounce>
     );
 };
 

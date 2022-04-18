@@ -15,7 +15,7 @@ const CheckOut = () => {
     }
     return (
         <div>
-            <div className="mt-10 sm:mt-0">
+            <div className="">
                 <div className="sm:w-4/6 mx-auto">
 
                     <div className="pt-28 ">
@@ -49,7 +49,7 @@ const CheckOut = () => {
                                             />
                                         </div>
 
-                                        <div className="col-span-3 mx-auto">
+                                        <div className="sm:col-span-3 col-span-6 mx-auto">
                                             <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
                                                 Email address
                                             </label>

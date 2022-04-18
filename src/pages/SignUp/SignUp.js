@@ -7,6 +7,7 @@ import Loading from '../SharedPage/Loading/Loading';
 import auth from '../../firebase.init';
 import { DisplyNameContext } from '../../App';
 import SocialLogin from '../SharedPage/SocialLogin/SocialLogin';
+import { Bounce } from 'react-reveal';
 
 const SignUp = () => {
     const [name, setName] = useState({ value: "", error: "" });
@@ -113,41 +114,43 @@ const SignUp = () => {
         return <Loading></Loading>
     }
     return (
-        <div className='SignIn-container'>
-            <div className="SignIn py-5 sm:py-8">
-                <div className="box">
-                    <div className="form">
-                        <h1>Sign Up Form</h1>
+        <Bounce top>
+            <div className='SignIn-container'>
+                <div className="SignIn py-5 sm:py-8">
+                    <div className="box">
+                        <div className="form">
+                            <h1>Sign Up Form</h1>
 
-                        <form onSubmit={handleSignUp}>
-                            <div className='input-container'>
-                                <input onBlur={handleName} type="displayName" name="displayName" placeholder="Enter Your Name" id="" />
-                                <p className='error'>{name.error}</p>
-                            </div>
-                            <div className='input-container'>
-                                <input onBlur={handleEmail} type="text" name="email" placeholder="Enter Your Email" id="" />
-                                <p className='error'>{email.error}</p>
-                            </div>
-                            <div className='input-container'>
-                                <input onBlur={handlePass} type="password" name="password" placeholder="Enter Your Password" id="" />
-                                <p className='error'>{pass.error}</p>
-                            </div>
+                            <form onSubmit={handleSignUp}>
+                                <div className='input-container'>
+                                    <input onBlur={handleName} type="displayName" name="displayName" placeholder="Enter Your Name" id="" />
+                                    <p className='error'>{name.error}</p>
+                                </div>
+                                <div className='input-container'>
+                                    <input onBlur={handleEmail} type="text" name="email" placeholder="Enter Your Email" id="" />
+                                    <p className='error'>{email.error}</p>
+                                </div>
+                                <div className='input-container'>
+                                    <input onBlur={handlePass} type="password" name="password" placeholder="Enter Your Password" id="" />
+                                    <p className='error'>{pass.error}</p>
+                                </div>
 
-                            <div className='input-container'>
-                                <input onBlur={handleConfrmPass} type="password" name="confirmPassword" placeholder="Enter Your Confirm Password" id="" />
-                                <p className='error'>{conPass.error}</p>
-                            </div>
-                            <div className='input-container'>
-                                <input type="submit" value="Sign up" />
-                            </div>
-                            <p>You already have an account ? <Link to={"/login"}>Login</Link></p>
-                        </form>
+                                <div className='input-container'>
+                                    <input onBlur={handleConfrmPass} type="password" name="confirmPassword" placeholder="Enter Your Confirm Password" id="" />
+                                    <p className='error'>{conPass.error}</p>
+                                </div>
+                                <div className='input-container'>
+                                    <input type="submit" value="Sign up" />
+                                </div>
+                                <p>You already have an account ? <Link to={"/login"}>Login</Link></p>
+                            </form>
+                        </div>
+                        <SocialLogin></SocialLogin>
+
                     </div>
-                    <SocialLogin></SocialLogin>
-
                 </div>
             </div>
-        </div>
+        </Bounce>
     );
 };
 

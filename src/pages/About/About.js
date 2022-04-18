@@ -16,18 +16,25 @@ const About = () => {
                                 <dt className="text-sm font-medium text-gray-500">Full name</dt>
                                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">Md Tazul Islam Rakib</dd>
                             </div>
-                            <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            {/* <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                 <dt className="text-sm font-medium text-gray-500">Expert of</dt>
                                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">Frontend Developer</dd>
-                            </div>
-                            <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            </div> */}
+
+                            <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                 <dt className="text-sm font-medium text-gray-500">Email address</dt>
                                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">tajulislam601@gmail.com</dd>
                             </div>
-
                             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                <dt className="text-sm font-medium text-gray-500">About</dt>
+                                <dt className="text-sm font-medium text-gray-500">Future Target</dt>
                                 <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                    I’m currently Learning on Frontend Web Development! <br /> 2022 Goals: Learn React, React Native, Node, MongoDB.
+                                </dd>
+                            </div>
+
+                            <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                <dt className="text-sm font-medium text-gray-500">About</dt>
+                                <dd className="mt-1 text-xs sm:text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                                     I'm Frontend, MERN Stack Developer! I am an enthusiastic and dedicated learner. with a deep interest in JavaScript. To work in the Software industry with modern web technologies web 3.0 and To pursue a challenging job in a dynamic and esteemed organization, where I will be able to perform in any kind of situation with full effort to utilize my knowledge, skill, and experience for professional career development..
                                 </dd>
                             </div>

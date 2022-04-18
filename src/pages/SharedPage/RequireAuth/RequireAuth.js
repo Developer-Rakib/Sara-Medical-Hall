@@ -4,7 +4,7 @@ import { Navigate, useLocation } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../Loading/Loading';
 
-function RequireAuth({ children }) {
+const RequireAuth = ({ children }) => {
     let location = useLocation(auth);
     let [user, leading, error] = useAuthState(auth)
     if (leading) {
@@ -19,6 +19,6 @@ function RequireAuth({ children }) {
     }
 
     return children;
-}
+};
 
 export default RequireAuth;

@@ -18,7 +18,7 @@ const Header = () => {
     let navigat = useNavigate();
 
     // console.log(user);
-    // console.log(user?.displayName);
+    // console.log(user?.photoURL);
 
 
 

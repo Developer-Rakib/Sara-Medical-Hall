@@ -5,7 +5,7 @@ Live Link :  [https://assignment-10-d74ae.firebaseapp.com/](https://assignment-1
 ## This project Built With few Pages
 - Home Page : About Dr. Sara, and her Few Service
 - Clicking on the service button will take you to checkout
-- The user can go to the login page if the user has login
+- The user can go to the Appoinment page if the user has login
 - About me on the About page
 - 3 question and ans on the Blogs page
 
